@@ -1,4 +1,3 @@
-import { log } from "console";
 import { iPokeModel } from "../../models/pokeModel";
 import "./pokeCard.css";
 
