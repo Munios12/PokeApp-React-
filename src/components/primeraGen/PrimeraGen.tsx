@@ -1,4 +1,3 @@
-import { log } from "console";
 import React, { useState, useEffect } from "react";
 import { iPokeModel } from "../../models/pokeModel";
 import * as api from "../../services/http-firstgen.pokemon";
