@@ -1,5 +1,4 @@
 import pokelogo from "../../img/pokelogo.png";
-import { menuOptionsType } from "../../interfaces/menuOptions";
 import "./header.css";
 
 export const Header = () => {
