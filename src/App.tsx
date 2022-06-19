@@ -1,25 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import { PrimeraGeneracion } from "../src/pages/primeraGeneracion";
+import "./App.css";
+import { Layout } from "./components/layout/Layout";
+import { menuOptionsType } from "./interfaces/menuOptions";
+import { SegundaGeneracion } from "./pages/segundaGeneracion";
 
 function App() {
+  const menuOptions: menuOptionsType = [
+    { path: "primeraGen", label: "primeraGen" },
+    { path: "segundaGen", label: "segundaGen" },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Layout menuOptions={menuOptions}>
+        <Routes>
+          <Route
+            path="primeraGen"
+            element={
+              <React.Suspense>
+                <PrimeraGeneracion />
+              </React.Suspense>
+            }
+          ></Route>
+          <Route
+            path="segundaGen"
+            element={
+              <React.Suspense>
+                <SegundaGeneracion />
+              </React.Suspense>
+            }
+          ></Route>
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

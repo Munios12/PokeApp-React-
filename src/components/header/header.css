@@ -1,0 +1,28 @@
+.header-app {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f3f3fd;
+}
+.header-app img {
+  width: 200px;
+}
+
+.header-app__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.header-app a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-app a:hover {
+  color: #cc5105cd;
+  text-shadow: 2px 2px 4px #322390c0;
+}
