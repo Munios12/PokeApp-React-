@@ -12,28 +12,26 @@ function App() {
     { path: "segundaGen", label: "second Gen" },
   ];
   return (
-    <Router>
-      <Layout menuOptions={menuOptions}>
-        <Routes>
-          <Route
-            path="primeraGen"
-            element={
-              <React.Suspense>
-                <PrimeraGeneracion />
-              </React.Suspense>
-            }
-          ></Route>
-          <Route
-            path="segundaGen"
-            element={
-              <React.Suspense>
-                <SegundaGeneracion />
-              </React.Suspense>
-            }
-          ></Route>
-        </Routes>
-      </Layout>
-    </Router>
+    <Layout menuOptions={menuOptions}>
+      <Routes>
+        <Route
+          path="primeraGen"
+          element={
+            <React.Suspense>
+              <PrimeraGeneracion />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="segundaGen"
+          element={
+            <React.Suspense>
+              <SegundaGeneracion />
+            </React.Suspense>
+          }
+        ></Route>
+      </Routes>
+    </Layout>
   );
 }
 
