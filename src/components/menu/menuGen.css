@@ -1,0 +1,29 @@
+.nav__gen {
+  background-color: #f4f3f3;
+  height: 3rem;
+}
+
+.nav__gen-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__gen-list li {
+  margin: 0px 20px;
+}
+
+.nav__gen-list li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+/* BOTONES */
+
+.nav__gen-list li a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+}

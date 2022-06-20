@@ -8,8 +8,8 @@ import { SegundaGeneracion } from "./pages/segundaGeneracion";
 
 function App() {
   const menuOptions: menuOptionsType = [
-    { path: "primeraGen", label: "primeraGen" },
-    { path: "segundaGen", label: "segundaGen" },
+    { path: "primeraGen", label: "first Gen" },
+    { path: "segundaGen", label: "second Gen" },
   ];
   return (
     <Router>

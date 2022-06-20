@@ -1,3 +1,5 @@
+import SegundaGen from "../components/segundaGen/SegundaGen";
+
 export const SegundaGeneracion = () => {
-  return <h1>HolaSegundaGen</h1>;
+  return <SegundaGen />;
 };
